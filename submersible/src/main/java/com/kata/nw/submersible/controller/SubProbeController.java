@@ -9,17 +9,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.kata.nw.submersible.dto.ProbeStatusResponseDTO;
 import com.kata.nw.submersible.dto.SubCommandRequestDTO;
-import com.kata.nw.submersible.service.SubProbeService;
+import com.kata.nw.submersible.service.ISubProbeService;
 
 @RestController
 @RequestMapping("/api/v1/probe")
 public class SubProbeController {
 
 	@Autowired
-	private SubProbeService probeService;
+	private ISubProbeService probeService;
 
 	@PostMapping("/move")
 	public ResponseEntity<ProbeStatusResponseDTO> move(@RequestBody SubCommandRequestDTO request) {
 		return ResponseEntity.ok(probeService.processCommands(request.getCommands()));
-	}
+	}	
 }

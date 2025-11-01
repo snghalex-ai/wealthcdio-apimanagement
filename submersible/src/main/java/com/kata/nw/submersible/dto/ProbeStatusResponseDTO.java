@@ -4,33 +4,32 @@ import java.util.List;
 
 public class ProbeStatusResponseDTO {
 
-	private int x;
-	private int y;
+	private Integer xAxis;
+	private Integer yAxis;
 	private String direction;
 	private List<String> visitedCoordinates;
 
-	public ProbeStatusResponseDTO(int x2, int y2, String direction2, List<String> visitedCoordinates2) {
-		this.x= x2;
-		this.y = y2;
+	public ProbeStatusResponseDTO(Integer xAxis2, Integer yAxis2, String direction2, List<String> visitedCoordinates2) {
+		this.xAxis= xAxis2;
+		this.yAxis = yAxis2;
 		this.direction = direction2;
-		this.visitedCoordinates = visitedCoordinates2;
-				
+		this.visitedCoordinates = visitedCoordinates2;		
 	}
 
-	public int getX() {
-		return x;
+	public Integer getxAxis() {
+		return xAxis;
 	}
 
-	public void setX(int x) {
-		this.x = x;
+	public void setxAxis(Integer xAxis) {
+		this.xAxis = xAxis;
 	}
 
-	public int getY() {
-		return y;
+	public Integer getyAxis() {
+		return yAxis;
 	}
 
-	public void setY(int y) {
-		this.y = y;
+	public void setyAxis(Integer yAxis) {
+		this.yAxis = yAxis;
 	}
 
 	public String getDirection() {
@@ -48,5 +47,4 @@ public class ProbeStatusResponseDTO {
 	public void setVisitedCoordinates(List<String> visitedCoordinates) {
 		this.visitedCoordinates = visitedCoordinates;
 	}
-
 }
