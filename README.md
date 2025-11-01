@@ -8,14 +8,17 @@ to any 4 directions (NORTH, SOUTH, EAST, EAST)** one step each move** through va
 	3. All visited coordinates so far.
 	
 # Environment and Setup
-# Tomcat Configuration
-Port : 8080
-Server: localhost
-
+	defalut to local, no profile
+	Pre-requisite: Install Java Version= jre17
+	
 # Build
 	MAVEN -e clean install
 	
-# API for Use Step
+# Tomcat Configuration
+	Port : 8080
+	Server: localhost
+
+# API Usage Step
 1. POST: http://localhost:8080/api/v1/auth/login (Generates JWT Token)
    Body: {
           "userName":"John"
