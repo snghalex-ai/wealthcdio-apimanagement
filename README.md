@@ -10,6 +10,7 @@ to any 4 directions (NORTH, SOUTH, EAST, EAST)** one step each move** through va
 # Environment and Setup
 # Tomcat Configuration
 Port : 8080
+Server: localhost
 
 # Build
 	MAVEN -e clean install
