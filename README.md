@@ -1,7 +1,11 @@
 # wealthcdio-apimanagement
 # Description
 This application is for submersbible Probe where an object can be moved starting from NORTH, (0,0) coordinates which is by default setting
-to any 4 directions (NORTH, SOUTH, EAST, EAST)** one step each move** through valid commands in ["MOVE_FORWARD", "TURN_LEFT", "MOVE_BACKWARD", "TURN_RIGHT"].
+to any 4 directions (NORTH, SOUTH, EAST, WEST) **each move- 1 Step** through valid commands listed in ["MOVE_FORWARD", "TURN_LEFT", "MOVE_BACKWARD", "TURN_RIGHT"].
+**Default Settings:**
+**Grid:** 10*10 (l*h)
+**Direction:** NORTH, (0,0)
+**Obstacle at:** ("2,2", "3,4")
 **Every API request will be able to present** 
 	1. coordinates of current position
 	2. Current Direction Facing
